@@ -1,2 +1,2 @@
-# servidores-redes3
-Aula referente a automação .bat
+# EQUIPE: EDUARDA,WAGNER E PIETRO
+AULA 21/08/2026
