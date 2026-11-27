@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06/11/2026 às 02:01
+-- Tempo de geração: 27/11/2026 às 01:59
 -- Versão do servidor: 10.11.16-MariaDB
 -- Versão do PHP: 8.3.36
 
@@ -42,14 +42,10 @@ CREATE TABLE `animais` (
 --
 
 INSERT INTO `animais` (`id`, `identificacao`, `especie`, `tipo`, `preco`, `status`, `data_cadastro`) VALUES
-(1, 'pietro / 21', 'Gado', 'bezerro', 0.00, '', '2026-11-05 14:33:58'),
-(2, 'wagner / 10', 'Gado', 'bezerro', 0.00, 'ativo', '2026-11-05 14:35:32'),
-(3, 'mimosa / 3', 'Gado', 'vaca', 0.00, '', '2026-11-05 14:43:38'),
-(4, 'icaro / 1', 'Ovelha', 'Borrego', 220.00, 'ativo', '2026-11-05 17:06:07'),
-(5, 'Lia / 11', 'Ovelha', 'Ovelha', 600.00, 'ativo', '2026-11-05 17:06:53'),
-(6, 'toro / 2', 'Gado', 'Boi', 3000.00, 'ativo', '2026-11-05 17:07:25'),
-(7, 'cabeça / 3', 'Ovelha', 'Carneiro', 800.00, 'ativo', '2026-11-05 17:08:49'),
-(8, 'WAGNER / 67', 'Ovelha', 'BORREGO', 67.00, 'ativo', '2026-11-05 17:15:54');
+(22, 'Plutão', 'Ovelha', 'Borrego(a)', 500.00, 'ativo', '2026-11-27 00:56:35'),
+(23, 'piether', 'Gado', 'Bezerro(a)', 800.00, 'ativo', '2026-11-27 00:56:55'),
+(24, 'piegner', 'Gado', 'Bezerro(a)', 800.00, 'ativo', '2026-11-27 00:57:09'),
+(25, 'waguietro', 'Gado', 'Bezerro(a)', 799.99, 'ativo', '2026-11-27 00:57:24');
 
 -- --------------------------------------------------------
 
@@ -83,16 +79,10 @@ CREATE TABLE `movimentacoes` (
 --
 
 INSERT INTO `movimentacoes` (`id`, `animal_id`, `tipo_movimentacao`, `valor_venda`, `data_registro`) VALUES
-(1, 1, 'cadastro_inicial', NULL, '2026-11-05 14:33:58'),
-(2, 2, 'nascimento', NULL, '2026-11-05 14:35:32'),
-(3, 3, 'cadastro_inicial', NULL, '2026-11-05 14:43:38'),
-(4, 3, 'morte', NULL, '2026-11-05 14:51:31'),
-(5, 1, 'venda', NULL, '2026-11-05 14:59:19'),
-(6, 4, 'nascimento', NULL, '2026-11-05 17:06:07'),
-(7, 5, 'cadastro_inicial', NULL, '2026-11-05 17:06:53'),
-(8, 6, 'cadastro_inicial', NULL, '2026-11-05 17:07:25'),
-(9, 7, 'cadastro_inicial', NULL, '2026-11-05 17:08:49'),
-(10, 8, 'nascimento', NULL, '2026-11-05 17:15:54');
+(42, 22, 'nascimento', NULL, '2026-11-27 00:56:35'),
+(43, 23, 'nascimento', NULL, '2026-11-27 00:56:55'),
+(44, 24, 'nascimento', NULL, '2026-11-27 00:57:09'),
+(45, 25, 'cadastro_inicial', NULL, '2026-11-27 00:57:24');
 
 --
 -- Índices para tabelas despejadas
@@ -125,7 +115,7 @@ ALTER TABLE `movimentacoes`
 -- AUTO_INCREMENT de tabela `animais`
 --
 ALTER TABLE `animais`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de tabela `clientes`
@@ -137,7 +127,7 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT de tabela `movimentacoes`
 --
 ALTER TABLE `movimentacoes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- Restrições para tabelas despejadas
